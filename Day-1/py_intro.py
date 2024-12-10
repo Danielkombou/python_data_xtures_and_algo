@@ -87,4 +87,14 @@ atg = operator.attrgetter
 # print(colors2)
 
 text = "good hello everyone in here!"
-print(text.find("h"))
+# print(text.find("h"))
+
+# print(bool(text))
+
+# print(isinstance(text, str))
+# print(4 // 4) # Floor division
+# print(2 ** 3) # Exponentiation
+
+x = 4
+x ^= 2
+# print(x)
