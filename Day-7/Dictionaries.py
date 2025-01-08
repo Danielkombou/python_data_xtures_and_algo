@@ -30,6 +30,31 @@ thisdict.update({"color": "blue"})
 # print(thisdict)
 
 # looping over dictionaries
-for x in thisdict:
-  print(x)
+# for x in thisdict:
+#   print(x, thisdict[x])
 
+# for u, i in thisdict.items():
+#   print(u, i)
+
+# Nested dictionaries
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+# print(myfamily["child1"]["name"])
+
+for dict1, obj in myfamily.items():
+    print(dict1)
+    for it in obj:
+        print(it + ":", obj[it])
