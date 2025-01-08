@@ -5,14 +5,14 @@
 # # print(lakes)
 
 
-# list_items = input("Enter list items separated with spaces").split()
-# print(f"List of items are {list_items}")
-# add_new = input("Add a new item in the list: ")
-# new_item = list_items.append(add_new)
-# print(f"List of items are {list_items}")
-# remove_item = input("Enter the item you wanna remove: ")
-# new_item = list_items.remove(remove_item)
-# print(f"List of items are {list_items}")
+list_items = input("Enter list items separated with spaces").split()
+print(f"List of items are {list_items}")
+add_new = input("Add a new item in the list: ")
+new_item = list_items.append(add_new)
+print(f"List of items are {list_items}")
+remove_item = input("Enter the item you wanna remove: ")
+new_item = list_items.remove(remove_item)
+print(f"List of items are {list_items}")
 
 
 # # contact@ticsummit.org
@@ -31,10 +31,10 @@ thislist.extend(thistuple)
 # delete an item from a list
 thislist1 = ["apple", "banana", "cherry"]
 del thislist1[0]
-print(thislist1)
+# print(thislist1)
 # Empty the entire list
 thislist1.clear()
-print(thislist1)
+# print(thislist1)
 
 # Loop over a list
 # for x in thislist:
@@ -47,9 +47,19 @@ print(thislist1)
 # list comprehension
 # syntax
 # newlist = [expression for item in iterable if condition == True]
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = [x if x != "banana" else "orange" for x in fruits if x != "apple"]
-print(newlist)
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# newlist = [x if x != "banana" else "orange" for x in fruits if x != "apple"]
+# print(newlist)
 
-num = [n for n in range(1, 11) if n < 5]
-print(num)
+# num = [n for n in range(1, 11) if n < 5]
+# print(num)
+
+thistuple1 = ("banana", "orange", 1, True)
+print(thistuple1)
+# update a tuple
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
